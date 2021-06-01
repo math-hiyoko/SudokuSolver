@@ -1,4 +1,4 @@
-#include <cassert>
+ #include <cassert>
 #include <cctype>
 #include <cstdio>
 #include <iostream>
@@ -12,7 +12,7 @@
 
 
 int main(void){
-    if (N <= 3) {
+    if (Size <= 3) {
         for (int i = 0; i < N;) {
             int j = 0;
             std::string str;
@@ -27,10 +27,11 @@ int main(void){
                     number_only = false;
                 }
             }
-            if ((j != 0 && j != N) || number_only) {
+            if ((j != 0 && j != N) || !number_only) {
+                printf("\n");
                 if (j < N) printf("Too few numbers in a line.\n");
                 if (j > N) printf("Too many numbers in a line.\n");
-                if (number_only) printf("Inputs should not include any characters excluding numbers.\n");
+                if (!number_only) printf("Inputs should not include any characters excluding numbers.\n");
                 return 0;
             }
             if (j == N) i++;
