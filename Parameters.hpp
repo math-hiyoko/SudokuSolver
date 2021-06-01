@@ -3,10 +3,12 @@
 
 #include <vector>
 
-extern int number_of_ans;
+
 extern const int Size;
-extern const int N;
 extern const int least_numbers;
+extern const int N;
+
+extern int number_of_ans;
 extern const int max_answers;
 extern const int COLS;
 extern const int ROWS;
