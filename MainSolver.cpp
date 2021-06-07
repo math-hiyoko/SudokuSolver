@@ -93,7 +93,6 @@ void knuthsAlgorithmX(void){
             ans.resize(temp.size());
             std::copy(temp.begin(), temp.end(), ans.begin());
         }
-
         number_of_ans++;
     }else{
         int c = selectColumnNodeHeuristic();
