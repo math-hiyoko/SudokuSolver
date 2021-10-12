@@ -1,4 +1,4 @@
- #include <cassert>
+#include <cassert>
 #include <cctype>
 #include <cstdio>
 #include <iostream>
